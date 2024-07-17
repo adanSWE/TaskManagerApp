@@ -33,10 +33,11 @@ import java.util.ArrayList; // importing the arrayList class to store a resizabl
 
 public class TaskManager {
 	// Connecting to the database:
-	private final String url = "jdbc:mysql://localhost:3306/reminders?useSSL=false&serverTimezone=UTC"; // Database connection URL
-	private final String user = "root"; // Database username
-	private final String password = "myDatabase105!"; // Database password
 	
+	private final String url = DatabaseConfig.getUrl();
+    private final String user = DatabaseConfig.getUser();
+    private final String password = DatabaseConfig.getPassword();
+
 	/**
 	 * This method is used to create a task using prepared statement
 	 * @param task: this variable is used to refer to the task class instance

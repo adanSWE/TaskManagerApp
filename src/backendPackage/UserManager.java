@@ -26,9 +26,9 @@ import java.sql.SQLException; // importing the SQLException class to catch SQL e
 
 public class UserManager {
 	// Setting up a database connection
-	private final String url = "jdbc:mysql://localhost:3306/reminders?useSSL=false&serverTimezone=UTC";
-	private final String user = "root";
-	private final String password = "myDatabase105!";
+	private final String url = DatabaseConfig.getUrl();
+    private final String user = DatabaseConfig.getUser();
+    private final String password = DatabaseConfig.getPassword();
 	
 	/**
 	 * This method is used to create a user (using user details like username, password and email)
