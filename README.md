@@ -4,7 +4,7 @@ This application provides a basic framework for managing personal tasks and dead
 ## **Referenced Libraries used:**
 mysql-connector-j-8.1.0.jar
 
-## **database schema:**
+## **Database schema:**
 3 tables:
 - app_users: to hold the user information
 ```plaintext
